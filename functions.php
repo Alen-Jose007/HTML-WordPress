@@ -82,8 +82,8 @@ function register_acf_block_types()
 
         array(
 
-            'name' =>'gallery',
-            'title' => __('Gallery'),
+            'name' =>'phases_gallery',
+            'title' => __('Phases_Gallery'),
             'description' => __('A custom gallery block'),
             'render_template' => 'gallery.php',
             'icon' => 'editor-paste-text',
@@ -96,8 +96,8 @@ function register_acf_block_types()
 
 function mab_register_acf_block_types() {
     acf_register_block_type( [
-        'name'            => 'blockquote',
-        'title'           => __( 'Blockquote' ),
+        'name'            => 'phases_blockquote',
+        'title'           => __( 'Phases_Blockquote' ),
         'description'     => __( 'My blockquote block.' ),
         'render_template' => 'blockquote.php',
         'icon'            => 'format-quote',

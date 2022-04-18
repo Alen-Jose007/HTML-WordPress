@@ -1,5 +1,5 @@
 <?php
-/* Template Name:  Gallery*/
+/* Block Name:  Gallery*/
 ?>
 <div class="container-fluid">
     <main class="tm-main">
@@ -11,7 +11,7 @@
                     $caption = get_sub_field('caption');
                     $link = get_sub_field('link');
             ?>
-                    <article class="col-12 col-md-6 tm-post">
+                    <article class="col-12 col-md-3 tm-post">
                         <hr class="tm-hr-primary">
                         <a class="effect-lily tm-post-link tm-pt-60" href="<?php the_permalink() ?>">
                             <div class="tm-post-link-inner">
@@ -21,7 +21,8 @@
                         <p class="tm-pt-30">
                             <?php echo $caption;  ?>
                         </p>
-                        <a href="<?php echo $link; ?>">Visit</a>
+                        <a href="<?php $link ?>">Visit Here</a>
+
                     </article>
             <?php endwhile;
             endif;
